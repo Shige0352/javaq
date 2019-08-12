@@ -1,5 +1,5 @@
 package com.javaq.api.domain.probrem
 
-interface ProblemStatement {
+data class ProblemStatement (
     val value: String
-}
+)

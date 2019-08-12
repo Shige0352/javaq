@@ -1,6 +1,6 @@
 package com.javaq.api.domain.judgementResult
 
-interface JudgementResult {
-    val isSuccess: IsSuccess
+data class JudgementResult (
+    val isSuccess: IsSuccess,
     val stdOut: StdOut
-}
+)

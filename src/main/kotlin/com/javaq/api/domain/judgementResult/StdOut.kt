@@ -1,5 +1,6 @@
 package com.javaq.api.domain.judgementResult
 
-interface StdOut {
+data class StdOut (
     val value: String
-}
+)
+

@@ -1,5 +1,5 @@
 package com.javaq.api.domain.judgementResult
 
-interface IsSuccess {
+data class IsSuccess(
     val value: Boolean
-}
+)

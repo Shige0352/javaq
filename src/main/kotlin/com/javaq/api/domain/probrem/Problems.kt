@@ -1,5 +1,5 @@
 package com.javaq.api.domain.probrem
 
-interface Problems {
+data class Problems (
     val list: List<Problem>
-}
+)
