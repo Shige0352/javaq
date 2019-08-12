@@ -1,5 +1,7 @@
 package com.javaq.api.domain.probrem
 
 data class Problem (
-    val problemStatement: ProblemStatement
+        val problemId: ProblemId,
+        val problemStatement: ProblemStatement,
+        val problemAnswer: ProblemAnswer
 )
