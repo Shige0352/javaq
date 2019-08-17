@@ -23,7 +23,7 @@ class ApiController(
         val result = Judge.judge(executeResult.stdOut, problem.problemAnswer)
         return result
     }
-
+    @CrossOrigin
     @GetMapping("problem/{problemId}")
     fun getProblemStatement(@PathVariable problemId: Int): String {
         val problem = problemRepository.getById(ProblemId(problemId))
