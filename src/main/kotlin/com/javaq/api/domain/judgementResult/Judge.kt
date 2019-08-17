@@ -5,9 +5,6 @@ import com.javaq.api.domain.probrem.ProblemAnswer
 
 object Judge {
     fun judge(stdOut: StdOut, problemAnswer: ProblemAnswer): JudgementResult {
-        return JudgementResult(
-                IsSuccess(stdOut.value == problemAnswer.value),
-                StdOut(stdOut.value)
-        )
+        return JudgementResult( stdOut.value == problemAnswer.value, stdOut.value)
     }
 }
